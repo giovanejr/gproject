@@ -34,6 +34,13 @@ root@eed6326c562a:/google-api-php-client/# cp -p /tmp/client_secret_861894563944
 
 
 
+php -r "copy('https://getcomposer.org/installer', '/tmp/composer-setup.php');"
+
+php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer
+
+composer require google/cloud-storage
+
+
 
 
 
